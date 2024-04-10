@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Authentification">
+
+    <!-- EditText pour saisir le code visiteur -->
+    <EditText
+        android:id="@+id/code_visiteur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Code visiteur"/>
+
+    <!-- Bouton de validation pour générer la clé secrète et l'envoyer par email -->
+    <Button
+        android:id="@+id/btnValiderCodeV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="AfficheLayout"
+        android:text="Valider"/>
+
+    <!-- Layout pour afficher la clé secrète -->
+    <LinearLayout
+        android:id="@+id/layoutCle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- EditText pour saisir la clé reçue par email -->
+        <EditText
+            android:id="@+id/my_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Clé secrète"/>
+
+        <!-- Bouton de validation pour comparer la chaîne de caractères -->
+        <Button
+            android:id="@+id/btnValiderCle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="comparerChaineCaractere"
+            android:text="Valider"/>
+    </LinearLayout>
+</LinearLayout>

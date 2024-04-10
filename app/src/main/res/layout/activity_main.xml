@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- EditText for entering Denomination_du_medicament -->
+    <EditText
+        android:id="@+id/editTextDenomination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Denomination_du_medicament"/>
+
+    <!-- EditText for entering Forme_pharmaceutique -->
+    <EditText
+        android:id="@+id/editTextFormePharmaceutique"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Forme_pharmaceutique"/>
+
+    <!-- EditText for entering Titulaires -->
+    <EditText
+        android:id="@+id/editTextTitulaires"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Titulaires"/>
+
+    <!-- EditText for entering Denomination_substance -->
+    <EditText
+        android:id="@+id/editTextDenominationSubstance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Denomination_substance"/>
+
+    <!-- Spinner for selecting Voies_dadministration -->
+    <Spinner
+        android:id="@+id/spinnerVoiesAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Voies_dadministration"/>
+
+    <!-- Button to trigger the search -->
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BF1313"
+        android:text="Rechercher" />
+
+    <!-- ListView to display the search results -->
+    <ListView
+        android:id="@+id/listViewResults"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDeconnexion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="deconnexion"
+            android:text="Déconnexion"/>
+
+        <Button
+            android:id="@+id/btnQuitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="quitter"
+            android:text="Quitter l'application"/>
+    </LinearLayout>
+</LinearLayout>

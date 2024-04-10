@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvCodeCIS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Code_CIS: " />
+
+    <TextView
+        android:id="@+id/tvDenomination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Denomination: " />
+
+    <TextView
+        android:id="@+id/tvFormePharmaceutique"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forme_pharmaceutique: " />
+
+    <TextView
+        android:id="@+id/tvVoiesAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voies_dadministration: " />
+
+    <TextView
+        android:id="@+id/tvTitulaires"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titulaires: " />
+
+    <TextView
+        android:id="@+id/tvStatutAdministratif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statut_Administratif: " />
+
+</LinearLayout>
